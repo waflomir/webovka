@@ -5,12 +5,14 @@ body {
     padding: 0;
     background-color: #f9f3e9;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Hlavička */
 header {
     background-color: #6b4f2b;
     color: white;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     text-align: center;
 }
 
@@ -27,24 +29,86 @@ header {
     color: white;
     font-size: 2rem;
     text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.icon-nav a:hover {
+    transform: scale(1.1);
 }
 
 .icon-nav a.active {
     transform: scale(1.2);
-    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 6px white;
 }
 
 /* Formulář */
 form {
-    max-width: 400px;
+    max-width: 500px;
     margin: 2rem auto;
-    padding: 1rem;
+    padding: 2rem;
+    background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-form label, form input, form button {
+form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea,
+form button {
     display: block;
     width: 100%;
-    margin-bottom: 1rem;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #8c6b48;
+    outline: none;
+    box-shadow: 0 0 5px rgba(140, 107, 72, 0.3);
+}
+
+form button {
+    background-color: #6b4f2b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #8c6b48;
+}
+
+/* Sekce – např. info, kontakty */
+.reservation-intro,
+.contact-info {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: #fffdf8;
+    border-left: 5px solid #8c6b48;
+    border-radius: 6px;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #6b4f2b;
+    color: white;
+    margin-top: 2rem;
 }
