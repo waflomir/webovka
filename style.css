@@ -6,6 +6,7 @@ body {
     background-color: #f9f3e9;
     color: #333;
     line-height: 1.6;
+    text-align: center;
 }
 
 /* Hlavička */
@@ -14,6 +15,7 @@ header {
     color: white;
     padding: 1.5rem 1rem;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Navigace pomocí ikon */
@@ -23,22 +25,24 @@ header {
     gap: 2rem;
     padding: 1rem;
     background-color: #8c6b48;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .icon-nav a {
     color: white;
     font-size: 2rem;
     text-decoration: none;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
 }
 
 .icon-nav a:hover {
     transform: scale(1.1);
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
 }
 
 .icon-nav a.active {
     transform: scale(1.2);
-    text-shadow: 0 0 6px white;
+    text-shadow: 0 0 8px white;
 }
 
 /* Formulář */
@@ -50,6 +54,7 @@ form {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: left;
 }
 
 form label {
@@ -67,6 +72,7 @@ form button {
     border-radius: 6px;
     font-size: 1rem;
     box-sizing: border-box;
+    margin-bottom: 1rem;
 }
 
 form input:focus,
@@ -98,10 +104,47 @@ form button:hover {
     background-color: #fffdf8;
     border-left: 5px solid #8c6b48;
     border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .contact-info p {
     margin: 0.5rem 0;
+}
+
+/* Obrázky v menu */
+.menu-image {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    margin: 1.5rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Seznamy v menu */
+.menu-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.menu-category li {
+    background-color: #fff;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Nadpisy */
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    margin-top: 1.5rem;
+    color: #6b4f2b;
 }
 
 /* Footer */
@@ -110,13 +153,6 @@ footer {
     padding: 1rem;
     background-color: #6b4f2b;
     color: white;
-    margin-top: 2rem;
-}
-.menu-image {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-top: 3rem;
+    font-size: 0.9rem;
 }
