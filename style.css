@@ -1,3 +1,5 @@
+/* style.css */
+
 /* Základní reset */
 body {
     font-family: Arial, sans-serif;
@@ -118,6 +120,7 @@ form button:hover {
     max-width: 500px;
     height: 300px;
     object-fit: cover;
+    display: block;
     margin: 1.5rem auto;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
